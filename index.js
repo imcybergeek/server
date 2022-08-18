@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.get('/', (req, res) => {
-    res.send('😂👌')
+    res.send('👌')
 })
 
 const PORT = process.env.PORT || 5000
