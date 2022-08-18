@@ -6,12 +6,9 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.post('/hook', (req, res) => {
-    console.log(req.body, req.headers)
-    res.status(200)
+app.get('/', (req, res) => {
+    res.send("👌")
 })
-
-const secret = "afgsfjblbkhafgsdmjgmfdhghdhfd"
 
 const PORT = process.env.PORT || 5000
 
